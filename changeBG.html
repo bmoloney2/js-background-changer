@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <button onclick="changeColor()">change color</button>
+  <script type="text/javascript">
+    function changeColor(){
+      var hex = Math.floor(Math.random() * 0xFFFFFF);
+      var newColor = "#" + ("000000" + hex.toString(16)).substr(-6);
+      document.body.style.backgroundColor = newColor
+    }
+  </script>
+</body>
+</html>
